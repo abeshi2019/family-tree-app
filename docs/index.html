@@ -20,7 +20,17 @@ section {
 </head>
 <body>
 <section>
+<script>
+const startTime = performance.now(); // 開始時間
+</script>
 <iframe src="./index2.html" width="600" height="100"></iframe>
+<script>
+const endTime = performance.now(); // 終了時間
+console.log(endTime - startTime);
+</script>
 </section>
+<script>
+	document.write(endTime - startTime);
+</script>
 </body>
 </html>
