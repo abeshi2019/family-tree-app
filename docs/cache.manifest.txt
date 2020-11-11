@@ -18,4 +18,4 @@ indexPathString.js
 indexSub.js
 indexWrapPaper.js
 manifest.json
-
+service_worker.js
