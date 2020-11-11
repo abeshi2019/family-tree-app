@@ -17,5 +17,5 @@ indexOther.js
 indexPathString.js
 indexSub.js
 indexWrapPaper.js
-
+manifest.json
 
