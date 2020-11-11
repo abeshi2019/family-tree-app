@@ -1,8 +1,7 @@
 // キャッシュファイルの指定
 var CACHE_NAME = 'pwa-sample-caches';
 var urlsToCache = [
-    //'/abeshi2019.github.io/family-tree-app',
-    '/',
+    '/abeshi2019.github.io/family-tree-app',
 ];
 
 // インストール処理
