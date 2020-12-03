@@ -98,7 +98,18 @@ const startTime = performance.now(); // 開始時間
 </script>
   
 <script>
-    <!-- service workerの登録関係 -->
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('sw.js').then(function(registration) {
+    // 登録成功
+    console.log('ServiceWorker の登録に成功しました。スコープ: ', registration.scope);
+  }).catch(function(err) {
+    // 登録失敗
+    console.log('ServiceWorker の登録に失敗しました。', err);
+  });
+}
+</script>
+	
+<!-- <script>
     if ('serviceWorker' in navigator) {
     navigator.serviceWorker.register('sw.js').then(function(registration) {
         console.log('ServiceWorker registration successful with scope: ', registration.scope);
@@ -106,7 +117,7 @@ const startTime = performance.now(); // 開始時間
         console.log('ServiceWorker registration failed: ', err);
     });
     }
-</script>
+</script> -->
 	
 <script>
 const endTime = performance.now(); // 終了時間
