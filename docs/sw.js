@@ -1,8 +1,23 @@
 // キャッシュファイルの指定
 var CACHE_NAME = 'pwa-sample-caches';
 var urlsToCache = [
-    //'/abeshi2019.github.io/family-tree-app',
     '.',
+    './index.css',
+    './indexPrint.css',
+    'lib/backbone-min.js',
+    'lib/jquery-1.9.1.js',
+    'lib/json2.js',
+    'lib/raphael-min.js',
+    'lib/underscore.js',
+    'src/index.js',
+    'src/indexCopy.js',
+    'src/indexCreateSymbol.js',
+    'src/indexCreateTool.js',
+    'src/indexDrag.js',
+    'src/indexOther.js',
+    'src/indexPathString.js',
+    'src/indexSub.js',
+    'src/indexWrapPaper.js',
 ];
 
 // インストール処理
