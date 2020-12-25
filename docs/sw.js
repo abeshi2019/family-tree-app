@@ -9,15 +9,15 @@ var urlsToCache = [
     'lib/json2.js',
     'lib/raphael-min.js',
     'lib/underscore.js',
-    'src/index.js',
-    'src/indexCopy.js',
-    'src/indexCreateSymbol.js',
-    'src/indexCreateTool.js',
-    'src/indexDrag.js',
-    'src/indexOther.js',
-    'src/indexPathString.js',
-    'src/indexSub.js',
-    'src/indexWrapPaper.js',
+    //'src/index.js',
+    //'src/indexCopy.js',
+    //'src/indexCreateSymbol.js',
+    //'src/indexCreateTool.js',
+    //'src/indexDrag.js',
+    //'src/indexOther.js',
+    //'src/indexPathString.js',
+    //'src/indexSub.js',
+    //'src/indexWrapPaper.js',
 ];
 
 // インストール処理
@@ -41,3 +41,6 @@ self.addEventListener('fetch', function(event) {
             })
     );
 });
+
+
+
