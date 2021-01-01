@@ -133,7 +133,6 @@ function copyCreateSymbol(beforeXY,afterXY,centerArray){
 JSONデータをもとに家系図記号を作成
 */
 function openSaveData(saveData){
-	console.log(saveData);
 	//最初にキャンバスのサイズを変更
 	for(var i=0;i<saveData.length;i++){
 		var line = saveData[i];
