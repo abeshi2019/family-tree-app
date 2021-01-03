@@ -61,10 +61,10 @@ function saveOpenData(txtOrString,saveOrOpen){
 		link.href = "data:text/plain," + encodeURIComponent(inputSaveDataForm.value);
  
 		// 保存するJSONファイルの名前をリンクに設定する。
-		a.download = fileName;
+		link.download = fileName;
  
 		// ファイルを保存する。
-		a.click();
+		link.click();
 		
 		if(txtOrString=='txt'){
 		}
