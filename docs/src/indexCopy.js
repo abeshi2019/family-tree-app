@@ -25,6 +25,8 @@ if(gridLineOn==false){return "";}//編集モードOFFのときは動かない
 }
 
 function saveOpenData(txtOrString,saveOrOpen){
+	const startTime = performance.now(); // 開始時間
+	
 	if(gridLineOn==false){return "";}//編集モードOFFのときは動かない
 
 	SubAllNone();
@@ -52,19 +54,19 @@ function saveOpenData(txtOrString,saveOrOpen){
 		inputSaveDataForm.value = JSON.stringify(createSaveData(true));
 		
 		// 保存するJSONファイルの名前
-		const fileName = "mochi.json";
+		//const fileName = "mochi.json";
  
 		// HTMLのリンク要素を生成する。
-		const link = document.createElement("a");
+		//const link = document.createElement("a");
  
 		// リンク先にJSON形式の文字列データを置いておく。
-		link.href = "data:text/plain," + encodeURIComponent(inputSaveDataForm.value);
+		//link.href = "data:text/plain," + encodeURIComponent(inputSaveDataForm.value);
  
 		// 保存するJSONファイルの名前をリンクに設定する。
-		link.download = fileName;
+		//link.download = fileName;
  
 		// ファイルを保存する。
-		link.click();
+		//link.click();
 		
 		if(txtOrString=='txt'){
 		}
@@ -83,6 +85,10 @@ function saveOpenData(txtOrString,saveOrOpen){
 	}else if(saveOrOpen=='open'){
 		miniOpen.style.display = 'block';
 	}
+	
+	const endTime = performance.now(); // 終了時間
+	console.log(endTime - startTime);
+	document.write(endTime - startTime);
 }
 
 //copy:OnOff
