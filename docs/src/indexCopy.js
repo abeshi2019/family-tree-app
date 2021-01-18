@@ -53,21 +53,6 @@ function saveOpenData(txtOrString,saveOrOpen){
 	if(saveOrOpen=='save'){
 		inputSaveDataForm.value = JSON.stringify(createSaveData(true));
 		
-		// 保存するJSONファイルの名前
-		//const fileName = "mochi.json";
- 
-		// HTMLのリンク要素を生成する。
-		//const link = document.createElement("a");
- 
-		// リンク先にJSON形式の文字列データを置いておく。
-		//link.href = "data:text/plain," + encodeURIComponent(inputSaveDataForm.value);
- 
-		// 保存するJSONファイルの名前をリンクに設定する。
-		//link.download = fileName;
- 
-		// ファイルを保存する。
-		//link.click();
-		
 		if(txtOrString=='txt'){
 		}
 	}else if(saveOrOpen=='open'){
